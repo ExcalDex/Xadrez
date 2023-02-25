@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    width: 98vw;
+    height: 97vh;
+}
+
+#container {
+    width: 98vw;
+    height: 97vh;
+    display: grid;
+    grid-template-areas: 'eb1'
+        'aj'
+        'eb2';
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 80% 10%;
+}
+
+#espaco1 {
+    grid-area: eb1;
+}
+
+#espaco2 {
+    grid-area: eb2;
+}
+
+#areajogavel {
+    grid-area: aj;
+    display: grid;
+    grid-template-areas: 'eb3 tab eb4';
+    grid-template-columns: 30vw 40vw 27vw;
+    grid-template-rows: 40vw;
+}
+
+#espaco3 {
+    grid-area: eb3;
+}
+
+#espaco4{
+    grid-area: eb4;
+}
+
+#tabuleiro {
+    grid-area: tab;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.area{
+    width: calc(40vw/8);
+    height: calc(40vw/8);
+}
